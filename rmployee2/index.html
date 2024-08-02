@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Performance Benefits</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #body{
+          background-color: #B2FFFF;
+        }
+        #signup{
+            position: relative;
+            bottom: 20px;
+        }
+        #signupForm input{
+            height: 20px;
+        }
+        /* .lo{
+            width: 100px;
+            background-color: red;
+            text-align: center;
+        } */
+    </style>
+</head>
+<body id="body">
+    <header>
+        <h1>Employee Performance Benefits</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('home')">Home</a></li>
+                <li><a href="#" onclick="showSection('login')">Login</a></li>
+                <li><a href="#" onclick="showSection('signup')">Sign Up</a></li>
+                <li><a href="admin.php">Admin</a></li>
+                <!-- <li><a href="#" onclick="showSection('contact')">Contact Us</a></li>
+                <li><a href="#" onclick="showSection('about')">About Us</a></li>
+                <li><a href="#" onclick="showSection('services')">Services</a></li>
+                <li><a href="#" onclick="showSection('faq')">FAQs</a></li> -->
+                <li><a href="landing.html" >Start-Page</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to Employee Performance Benefits</h2>
+            <p>Your hard work deserves to be rewarded. Sign up or log in to see your benefits.</p>
+        </section>
+
+        <section id="login" class="hidden">
+            <h2 class="lo">Login</h2>
+            <form id="loginForm" action="login.php" method="post">
+                <label for="login-email">Email:</label>
+                <input type="email" id="login-email" name="email" required>
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+
+        <section id="signup" class="hidden">
+            <h2 class="lo">Sign Up</h2>
+            <form id="signupForm" action="signup.php" method="post">
+                <label for="signup-name">Name:</label>
+                <input type="text" id="signup-name" name="name" required>
+                <label for="signup-email">Email:</label>
+                <input type="email" id="signup-email" name="email" required>
+                <label for="signup-password">Password:</label>
+                <input type="password" id="signup-password" name="password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+
+        <!-- Additional sections for contact, about, services, and faq -->
+        <section id="contact" class="hidden">
+            <h2>Contact Us</h2>
+            <p>Contact details go here.</p>
+        </section>
+
+        <section id="about" class="hidden">
+            <h2>About Us</h2>
+            <p>About us details go here.</p>
+        </section>
+
+        <section id="services" class="hidden">
+            <h2>Our Services</h2>
+            <p>Services details go here.</p>
+        </section>
+
+        <section id="faq" class="hidden">
+            <h2>FAQs</h2>
+            <p>Frequently Asked Questions go here.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Employee Benefits, Inc. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
